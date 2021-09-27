@@ -204,7 +204,7 @@ const createEventElement = (event, start, end) => {
     eventElement.style.top = topPos + 'px';
     linkEle.innerHTML = event.name;
   }
-	linkEle.href = "#";
+	linkEle.href = "#calender";
   linkEle.append(modalContent(event));
   linkEle.setAttribute('data-object', event);
   let modalPopup = modalContent(event);
