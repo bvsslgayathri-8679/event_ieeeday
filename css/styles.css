@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/*.ieee-navbar{
+    font-size: 13px;
+    background: #0874a4;
+    height: 35px;
+}
+
+.ieee-navbar a{
+    padding: 0 20px;
+    margin: 0 10px;
+    color: #fff;
+}
+*/
+
+
+.row{
+  margin-right: 0px!important;
+}
+.sticky-top{
+    top: 0;
+}
+
+.sb-navbar{
+    position: fixed;
+    background: transparent;
+    margin-bottom: -10px;
+    font-weight: 400;
+}
+
+.sb-navbar .fa-bars{
+    color: #fff;
+}
+
+.sb-navbar .scrolled .fa-bars{
+    color: #000;
+}
+
+.sb-navbar .dropdown-menu{
+    border: 0;
+    background: transparent;
+}
+
+.sb-navbar .dropdown a{
+    text-align: center;
+}
+
+.sb-navbar .nav-item a{
+    color: #fff;
+}
+
+.sb-navbar .scrolled {  
+    /*background-color: #fbc108;*/
+    background-color: #fff;
+    transition: background-color 200ms linear;
+}
+
+.sb-navbar .scrolled a{
+    color: #000;
+}
+
+.sb-navbar .scrolled .dropdown-menu{
+    background-color: #fff;
+}
+
+.sb-navbar .navbar-brand img{
+    /*height: 50px;
+    width: 100%;*/
+    height: 4rem;
+    width: 9rem;
+    margin-left: 5vw;
+}
+
+@media (max-width: 1080px){
+    .sb-navbar .navbar-brand img{
+        height: 3rem;
+        width: 6.75rem;
+    }
+}
+
+.sb-navbar .navbar-nav{
+    margin-right: 25px;
+    position: relative;
+}
+
+.sb-navbar .navbar-nav li{
+    padding: 5px 20px;
+    /*padding-left: 20px;*/
+}
+
+.sb-navbar ul{
+    padding-right: 25px;
+    list-style: none;
+}
+
+.sb-navbar ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: center;
+}
+
+.sb-navbar ul li a{
+    display: block;
+    padding: 8px 25px;
+    text-decoration: none;
+}
+
+.sb-navbar ul li:hover{
+    color: #fff;
+    background: #193f7d;
+}
+
+.sb-navbar .scrolled ul li:hover a{
+    color: #fff;
+    /*background: #193f7d;*/
+}
+
+.sb-navbar .scrolled ul li:hover .dropdown-menu a{
+    color: #000;
+    /*background: #193f7d;*/
+}
+
+.sb-navbar ul li .dropdown{
+    min-width: 100%;
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+    /*z-index: 999;*/
+    left: 0;
+}
+
+.sb-navbar ul li .dropdown-menu a:hover{
+    background: #426296;   
+}
+
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #055fad;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+.banner {
+    color: #fff;
+    height: 70vh;
+    min-height: 500px;
+    background:linear-gradient(0deg,rgba(251,140, 0, 0.3), rgba(251,140,0, 0.3)),
+              url('../images/bg_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.about-ieee-day-heading{
+    padding: 30px;
+    font-weight: 400;
+    color: #055fad;
+}
+
+.about-ieee-info h2{
+    padding: 20px 0;
+    color: #000;
+}
+
+.about-ieee-info .sub-section{
+    padding: 40px 0;
+}
+
+.about-ieee-info .ieee-india{
+    padding: 40px 0;
+}
+
+.about-ieee-day-heading .underline{
+    background-color: #000;
+    border: 2px solid #000;
+    margin-top: -5px;
+}
+
+.about-ieee-info .underline{
+    background-color: #055fad;
+    border: 1px solid #055fad;
+    margin-top: -18px;
+}
+
+.about-ieee-info p{
+    padding-bottom: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-ieee-info .btn{
+    color: #fff;
+    background-color: #055fad;
+    font-family: 'Oswald';
+}
+
+.about-ieee-info .btn:hover{
+    color: #055fad;
+    background-color: #fff;
+    border: 2px solid #000;
+    overflow: hidden;
+    margin-bottom: -2px;
+}
+.about-ieee-day .btn{
+    color: #fff;
+    background-color: #055fad;
+    font-family: 'Oswald';
+}
+
+.about-ieee-day .btn:hover{
+    color: #055fad;
+    background-color: #fff;
+    border: 2px solid #000;
+    overflow: hidden;
+    margin-bottom: -2px;
+}
+
+.about-ieee-day .poster{
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    display: flex;
+}
+.about-ieee-day .banner-pdf{
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    display: flex;
+}
+
+.about-ieee-day .row{
+    margin-left:0% !important;
+    margin-right: 0% !important;
+
+}
+
+
+
+/*footer*/
+
+.page-footer{
+    background-color: #055fad;
+    color: #ffffff;
+}
+
+.footer-heading{
+    padding: 30px;
+    color: #fff;
+}
+
+.footer-heading .underline{
+    background-color: #fff;
+    border: 2px solid #fff;
+    margin-top: -5px;
+}
+
+.footer-info{
+    padding: 40px 0;
+    margin: 0 40px;
+}
+
+.footer-info .underline{
+    background-color: #fff;
+}
+
+.footer-info .contact-mode{
+    padding: 20px 0;
+}
+
+.page-footer a{
+    color: #ffffff;
+}
+
+.social-media-handles a{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.cal-container {
+  display: grid;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  background-color: #eee;
+  grid-template-columns: 0.25fr 0.75fr;
+  gap: 0 2px;
+  border: 3px solid #000;
+}
+.cal-container .date-container {
+  display: block;
+  background-color: #000;
+  font-family: arial;
+  overflow-y: scroll;
+}
+.cal-container .date-container .event-dates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cal-container .date-container .event-dates span {
+  color: #fff;
+  padding: 5px;
+}
+.cal-container .date-container .event-dates a {
+  text-decoration: none;
+  color: #000;
+  width: 90%;
+  margin: 5px auto;
+  padding: 10px 0;
+  background-color: #eee;
+  text-align: center;
+}
+.cal-container .date-container .event-dates a:hover {
+  background-color: #0277BD;
+  color: #fff;
+}
+.cal-container .events-container {
+  display: block;
+  background-color: #eceff1;
+}
+.cal-container .events-container .timings {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  padding: 10px;
+  background-color: #eee;
+  border-bottom: solid 2px #000;
+}
+.cal-container .events-container .timings span {
+  font-family: arial;
+}
+.cal-container .events-container #limits {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cal-container .events-container #limits .event a:hover .modal {
+  display: block;
+}
+
+.event {
+  background-color: #0277BD;
+  padding: 10px;
+  text-align: center;
+  margin: 5px 0;
+}
+.event .eventHref {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.event .eventHref .modal {
+  height: 400px;
+  color: #000;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 15px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+.modal-content p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+ 
+}
+
+.modal-content h2{
+  color: #0277BD;
+  font-family: 'Merriweather', serif;
+
+}
+.modal-content h4{
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+
+.modal-content a{
+  background-color: #0277BD;
+  font-weight: 300;
+  border: 1px solid #0277BD;
+  width: 6rem;
+  left: 50%;
+  margin-left: 45%!important;
+  align-items: center;
+  text-align: center;
+  color:#cfd8dc;
+  text-decoration: none !important;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.modal-content a:hover{
+  color:#0277BD;
+  text-decoration: none !important;
+  font-weight: 300;
+  width: 6rem;
+  left: 50%;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #0277BD;
+  background-color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+.modal-content small{
+  padding: 10px 10px;
+  margin: 2px;
+  top: 2px;
+
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .cal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 95vw;
+    height: auto;
+    margin: auto;
+    padding: 10px 0;
+  }
+  .cal-container .date-container {
+    background-color: #eee;
+    overflow-x: scroll;
+  }
+  .cal-container .date-container .event-dates {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px 0;
+  }
+  .cal-container .date-container .event-dates span {
+    display: none;
+  }
+  .cal-container .date-container .event-dates a {
+    width: 50px;
+    box-shadow: 2px 2px 3px #cfd8dc;
+    border-radius: 3px;
+  }
+  .cal-container .events-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #eee;
+    gap: 5px 10px;
+  }
+  .cal-container .events-container .timings {
+    display: none;
+  }
+  .cal-container .events-container .event {
+    background-color: #0277BD;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+  }
+  .cal-container .events-container .event .eventHref {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  .cal-container .events-container .event .eventHref .modal {
+    height: 400px;
+    color: #000;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
